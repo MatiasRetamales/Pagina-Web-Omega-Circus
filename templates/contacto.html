@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omega Circus</title>
+    <link rel="stylesheet" href="/static/css/contacto.css">
+    <script src="/static/js/contacto.js" defer></script>
+</head>
+
+<body>
+
+    <section class="contacto">
+        <div>
+        <h2>Contacto</h2>
+        <img src="/static/images/Logo_Omega.jpg" alt="">
+        </div>
+        
+        <form action="/enviar-formulario" method="post" class="contacto-formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+
+</body>
